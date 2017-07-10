@@ -8,12 +8,22 @@
 </head>
 <body>
 <div class="container">
-<h1 class="text-center"> Brincando de Canvas </h1>
-<input type="color" id="colorPickerBackground" value='#FF33FF'>
-<button id="pintarFundo">pintar fundo</button>
-<canvas width="600" height="400" id="canvas"></canvas>
-<label>Cor da fonte: <input type="color" id="colorPickerCircle" value='#FFF'></label>
-<label>Tamanho da Fonte: <input type="number" id="tamFonte" min="0" value="10"></label>
+	<div class="col s12">
+		<h1 class="text-center card-panel teal lighten-2"> Brincando de Canvas </h1>
+	</div>
+	<div class="col s12 card-panel teal lighten-5">
+		<input type="color" id="colorPickerBackground" value='#F3FcF3'>
+		<button id="pintarFundo">pintar fundo</button>
+		<label>Cor da fonte: <input type="color" id="colorPickerCircle" value='#FFF'></label>
+		<label>Tamanho da Fonte: <input type="number" id="tamFonte" min="0" value="10"></label>
+	</div>
+	<div class="col s3">
+	</div>
+	<div class="col s6">
+		<canvas width="600" height="400" id="canvas"></canvas>
+	</div>
+	<div class=" col s3">
+	</div>
 </div>
 </body>
 <script src="js/site.js"></script>
