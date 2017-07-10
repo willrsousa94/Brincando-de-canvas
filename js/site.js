@@ -10,7 +10,7 @@ var pincel = tela.getContext('2d');
      var tinta = document.querySelector('input[id="colorPickerBackground"]');
      var cor = tinta.value;
       pincel.fillStyle = cor;
-      pincel.fillRect(0, 0, 600,400);
+      pincel.fillRect(0, 0, 1045,450);
 }
 
 
