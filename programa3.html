@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
+<!-- Chamada dos arquivos Css -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/site.css">
 <link rel="stylesheet" href="css/libs/materialize.min.css">
 </head>
 <body>
 <div class="container">
+	<!-- Título da página -->
 	<div class="col s12">
 		<h1 class="text-center card-panel teal lighten-2"> Brincando de Canvas </h1>
 	</div>
+	<!-- Criação dos botões para interação ao Canvas -->
 	<div class="col s12 card-panel teal lighten-5">
-		<input type="color" id="colorPickerBackground" value='#F3FcF3'>
-		<button id="pintarFundo">pintar fundo</button>
-		<label>Cor da fonte: <input type="color" id="colorPickerCircle" value='#FFF'></label>
-		<label>Tamanho da Fonte: <input type="number" id="tamFonte" min="0" value="10"></label>
+		<input type="color" id="colorPickerBackground" value='#F3FcF3'>  <!-- Caixa de cores para o fundo do Canvas -->
+		<button id="pintarFundo">pintar fundo</button><!-- Botão para pintar o fundo do canvas -->
+		<label>Cor da fonte: <input type="color" id="colorPickerCircle" value='#FFF'></label> <!-- Caixa de cores para a cor do círculo (fonte)-->
+		<label>Tamanho da Fonte: <input type="number" id="tamFonte" min="0" value="10"></label> <!-- Botão para pintar o círculo (Fonte)-->
 	</div>
-	<div class="col s3">
-	</div>
-	<div class="col s6">
-		<canvas width="1045" height="450" id="canvas"></canvas>
-	</div>
-	<div class=" col s3">
-	</div>
+	<!-- Criação do Canvas-->
+	<canvas width="1045" height="450" id="canvas"></canvas>
 </div>
 </body>
+	<!-- Chamada do arquivo site.js para interação com JavaScript -->
 <script src="js/site.js"></script>
 </html>
