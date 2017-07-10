@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title> Brincando de Canvas </title>
+
 <link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/libs/materialize.min.css">
 <link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/libs/materialize.min.css">
 </head>
 <body>
-<div class="container">                            
-  <h1 class="text-center"> Brincando de Canvas </h1>
-  <input type="color" id="colorPickerBackground" value='#FF33FF'>
-  <button id="pintarFundo">pintar fundo</button>
-  <canvas width="600" height="400" id="canvas"></canvas>
-  <label>Cor da fonte <input type="color" id="colorPickerCircle" value='#FFF'></label>
-</div>                                                             
+<div class="container">
+<h1 class="text-center"> Brincando de Canvas </h1>
+<input type="color" id="colorPickerBackground" value='#FF33FF'>
+<button id="pintarFundo">pintar fundo</button>
+<canvas width="600" height="400" id="canvas"></canvas>
+<label>Cor da fonte: <input type="color" id="colorPickerCircle" value='#FFF'></label>
+<label>Tamanho da Fonte: <input type="number" id="tamFonte" min="0" value="10"></label>
+</div>
 </body>
 <script src="js/site.js"></script>
 </html>
