@@ -3,9 +3,7 @@
 var tela = document.querySelector('canvas');
 var pincel = tela.getContext('2d');
 
-
-
-
+//Função que recebe a cor da tinta para pintar o fundo do Canvas
  function recebeTinta(corfundo) {
      var tinta = document.querySelector('input[id="colorPickerBackground"]');
      var cor = tinta.value;
@@ -13,7 +11,7 @@ var pincel = tela.getContext('2d');
       pincel.fillRect(0, 0, 1045,450);
 }
 
-
+//Função que recebe a cor da tinta para pintar o pincel e pintar o círculo no Canvas
 function corPincel(cor) {
     var tinta = document.querySelector('input[id="colorPickerCircle"]');
     var cor = tinta.value;
@@ -21,7 +19,7 @@ function corPincel(cor) {
     pincel.fillStyle = cor;
 }
 
-
+// Função que permite pintar o Círculo no Canvas
 function desenhaCirculo(evento,tamanho) {
     
     var x = evento.pageX - tela.offsetLeft;
@@ -35,5 +33,5 @@ function desenhaCirculo(evento,tamanho) {
     pincel.fill();
 }
 
-tela.onclick = desenhaCirculo;
-pintarFundo.onclick = recebeTinta;
+tela.onclick = desenhaCirculo; //Funcionalidade que permite desenhar o círculo ao clicar no canvas.
+pintarFundo.onclick = recebeTinta; //Funcionalidade que permite alterar a cor do fundo do canvas, ao clicar no botão de Pintar Fundo
